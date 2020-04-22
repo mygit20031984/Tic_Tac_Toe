@@ -62,12 +62,14 @@ while True:
                 if checkAll('B') == True:
                     print('Player B Won)')
                     show()
-                    winner = PlayerB
+                    PlayerB = 1
                     break;
                 break;
 
             else:
                 print('This spot is already taken.')
+        if PlayerB == 1:
+            break;
 
     else:
         print('This spot is already taken.')
